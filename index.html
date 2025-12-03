@@ -1,121 +1,50 @@
 <!DOCTYPE html>
-  <html lang="it">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>MemoGrid - Supporto</title>
-      <style>
-          * { margin: 0; padding: 0; box-sizing: border-box; }
-          body {
-              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-  Roboto, sans-serif;
-              background: linear-gradient(135deg, #1A1D2E 0%, #0F1115 100%);
-              color: #fff;
-              padding: 40px 20px;
-              min-height: 100vh;
-          }
-          .container {
-              max-width: 800px;
-              margin: 0 auto;
-              background: rgba(37, 40, 56, 0.8);
-              padding: 40px;
-              border-radius: 20px;
-              border: 1px solid rgba(0, 255, 255, 0.3);
-          }
-          h1 {
-              color: #00FFFF;
-              margin-bottom: 10px;
-              font-size: 2.5em;
-          }
-          h2 {
-              color: #00FFFF;
-              margin-top: 30px;
-              margin-bottom: 15px;
-              font-size: 1.5em;
-          }
-          p {
-              line-height: 1.6;
-              margin-bottom: 15px;
-              color: #E0E0E0;
-          }
-          .contact {
-              background: rgba(0, 255, 255, 0.1);
-              padding: 20px;
-              border-radius: 10px;
-              margin: 20px 0;
-          }
-          a {
-              color: #00FFFF;
-              text-decoration: none;
-          }
-          a:hover { text-decoration: underline; }
-          ul {
-              margin-left: 20px;
-              margin-bottom: 15px;
-          }
-          li {
-              margin-bottom: 10px;
-              line-height: 1.6;
-          }
-      </style>
-  </head>
-  <body>
-      <div class="container">
-          <h1>🔷 MemoGrid</h1>
-          <p style="font-size: 1.2em; color: #00FFFF;">Supporto e
-  Assistenza</p>
-
-          <h2>📱 Cos'è MemoGrid?</h2>
-          <p>MemoGrid è un'app per iOS che ti aiuta a memorizzare password e
-   PIN usando il metodo del Palazzo della Memoria. Trasforma sequenze
-  complesse in pattern visivi facili da ricordare su una griglia esagonale
-  personalizzabile.</p>
-
-          <h2>❓ Domande Frequenti</h2>
-
-          <h3 style="color: #00FFFF; margin-top: 20px;">Come funziona?</h3>
-          <p>Crea una carta mnemonica, inserisci la tua password o PIN, e
-  seleziona le celle della griglia nell'ordine desiderato. Il tuo cervello
-  ricorderà il percorso visivo molto più facilmente della sequenza
-  astratta!</p>
-
-          <h3 style="color: #00FFFF; margin-top: 20px;">I miei dati sono al
-  sicuro?</h3>
-          <p>Assolutamente sì. Tutti i dati rimangono esclusivamente sul tuo
-   dispositivo. Non c'è alcuna connessione a server esterni, nessun cloud,
-  nessun account. Privacy totale.</p>
-
-          <h3 style="color: #00FFFF; margin-top: 20px;">Posso usarla per più
-   password?</h3>
-          <p>Sì! Puoi creare tutte le carte mnemoniche che desideri, una per
-   ogni password, PIN o codice che vuoi memorizzare.</p>
-
-          <h3 style="color: #00FFFF; margin-top: 20px;">Come sblocco una
-  carta?</h3>
-          <p>Tocca l'icona del lucchetto in alto a destra. Le carte bloccate
-   prevengono modifiche accidentali.</p>
-
-          <h2>📧 Contatti</h2>
-  <div class="contact">
-      <p><strong>Hai bisogno di aiuto o vuoi segnalare un
-  problema?</strong></p>
-      <p>Apri una Issue su GitHub: <a 
-  href="https://github.com/matteolinux/memogrid-support/issues" 
-  target="_blank">Report an Issue</a></p>
-      <p style="margin-top: 10px; font-size: 0.9em; color: 
-  #A0A0A0;">Risponderemo il prima possibile</p>
-  </div>
-
-
-          <h2>🔒 Privacy</h2>
-          <p>MemoGrid non raccoglie, trasmette o memorizza alcun dato sui
-  nostri server. Non ci sono tracker, analytics o pubblicità. La tua privacy
-   è totale.</p>
-
-          <p style="margin-top: 40px; text-align: center; color: #666; 
-  font-size: 0.9em;">
-              © 2025 MemoGrid - Made with ❤️ for better memory
-          </p>
-      </div>
-  </body>
-  </html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MemoGrid Support</title>
+    <script>
+        // Rileva la lingua del browser
+        const userLang = navigator.language || navigator.userLanguage;
+        
+        // Reindirizza alla pagina appropriata
+        if (userLang.startsWith('it')) {
+            window.location.href = '/memogrid-support/it/index.html';
+        } else {
+            window.location.href = '/memogrid-support/en/index.html';
+        }
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1A1D2E 0%, #0F1115 100%);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        a {
+            color: #00FFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔷 MemoGrid Support</h1>
+        <p>Choose your language / Scegli la lingua:</p>
+        <a href="/memogrid-support/en/index.html">🇬🇧 English</a>
+        <a href="/memogrid-support/it/index.html">🇮🇹 Italiano</a>
+    </div>
+</body>
+</html>
